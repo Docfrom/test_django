@@ -7,6 +7,7 @@ from django.template.loader import render_to_string
 menu = [{"title": "О сайте", "url_name": "about"},
         {"title": "Врачи", "url_name": "doctor"},
         {"title": "Услуги", "url_name": "service"},
+        {"title": "Записаться на прием", "url_name": "record"},
         {"title": "Войти", "url_name": "login"}]
 
 data_db = [
@@ -44,6 +45,9 @@ def show_post(request, post_id):
 
 def login(request):
     return HttpResponse('Авторизация')
+
+def records(request):
+    return HttpResponse('<h1>Данная страница находится в разработке!</h1>')
 
 def page_not_found(request, exception):
     return HttpResponseNotFound("<h1>Страница не найдена</h1>")

@@ -13,5 +13,6 @@ urlpatterns = [
     path('doc/', views.doctors, name='doctor'),
     path('archive/<year4:year>/', views.archive, name='archive'),
     path('post/<int:post_id>/', views.show_post, name='post'),
-    path('login/', views.login, name='login')
+    path('login/', views.login, name='login'),
+    path('rec/', views.records, name='record')
 ]
